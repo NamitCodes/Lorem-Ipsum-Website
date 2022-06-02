@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some random University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3d23ac3bff.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="far fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="menu" onclick="showMenu()"> </i>
+        </nav>
+
+    <h1>Contact Us</h1>
+
+    </section>
+
+    <!-- -------CONTACT US---------- -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14008.942407371069!2d77.09096964999999!3d28.6227001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1632251320569!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-home"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Janakpuri, New Delhi</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>
+                    <h5>+91 8826746155</h5>
+                    <p>Morning to Evening, 7 Days</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <span>
+                    <h5>namitguptadelhi@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="contact-col">
+            <form action="form-handler.php" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your Email Address" required>
+                <input type="text" name="subject" placeholder="Enter your Subject" required>
+                <textarea name="message" id="" rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="main-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- ------------FOOTER---------------- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis enim molestiae <br> distinctio! Nobis adipisci est ullam repellat repellendus similique dignissimos facilis minus.</p>
+    <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made by Namit Gupta<i class="fas fa-hat-cowboy" id="hat"></i> aka Me!</p>
+</section>
+
+
+
+
+
+
+
+
+<!-- --------------JAVASCRIPT FOR TOGGLE MENU------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+</body>
+</html>
